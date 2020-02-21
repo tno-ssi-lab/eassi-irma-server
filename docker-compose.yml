@@ -1,0 +1,14 @@
+version: "3"
+services:
+  irma:
+    build: .
+    ports:
+      - "8088:8088"
+    environment:
+      - IRMASERVER_URL=https://e73e4b19.ngrok.io
+      - IRMASERVER_VERBOSE=1
+      - IRMASERVER_PRODUCTION=true
+    volumes:
+      - irma_schemes:/root/.local/share/irma/irma_configuration
+volumes:
+  irma_schemes:

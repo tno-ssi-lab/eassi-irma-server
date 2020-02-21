@@ -1,0 +1,11 @@
+{
+  "email": "hidde-jan.jongsma@tno.nl",
+  "jwt_privkey_file": "/run/irmaServer.key",
+  "production": true,
+  "requestors": {
+    "ssi-service-provider": {
+      "auth_method": "publickey",
+      "key_file": "/run/ssiJwt.key.pub"
+    }
+  }
+}

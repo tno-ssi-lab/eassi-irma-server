@@ -10,4 +10,6 @@ COPY irma /usr/local/bin/
 
 COPY irmaserver.json irmaServer.key ssiJwt.key.pub ./
 
+EXPOSE 8088
+
 CMD [ "irma", "server" ]
